@@ -1,13 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { presetUno } from "unocss";
-import { presetDaisy } from "unocss-preset-daisy";
 export default defineNuxtConfig({
   app: {
     head: {
       title: "nuxt-3-starter",
       charset: "utf-16",
       viewport: "width=device-width, initial-scale=1",
-      meta: [{ name: "description", content: "Starter template for Nuxt 3." }],
+      meta: [
+        { name: "description", content: "Starter template for Nuxt 3." },
+        { name: "naive-ui-style" },
+        { name: "naive-ui-style" },
+      ],
       link: [
         {
           rel: "preconnect",
@@ -25,8 +28,8 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@unocss/nuxt", "@pinia/nuxt", "@bg-dev/nuxt-naiveui"],
-  css: ["@unocss/reset/tailwind.css"],
+  //  css: ["@unocss/reset/tailwind.css"],
   unocss: {
-    presets: [presetUno(), presetDaisy()],
+    presets: [presetUno()],
   },
 });

@@ -1,6 +1,6 @@
 <template>
-  <div class="grid h-screen place-items-center overflow-hidden">
-    <n-config-provider :theme="stores.theme">
+  <div>
+    <n-config-provider :theme="stores.theme" preflight-style-disabled>
       <n-message-provider>
         <n-global-style />
         <NuxtLayout>
@@ -13,7 +13,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useStore } from "~/stores/theme";
-
 export default defineComponent({
   setup() {
     const stores = useStore();
@@ -23,18 +22,16 @@ export default defineComponent({
     };
   },
   mounted() {
-    if (process.client) {
-      try {
-        const checkFirstTheme = localStorage.getItem("theme");
-        if (checkFirstTheme === null) {
-          localStorage.setItem("theme", "darkTheme");
-          setTimeout(() => {
-            window.location.reload();
-          }, 100);
-        }
-      } catch (error) {
-        console.log("localStorage is not available");
+    try {
+      const checkFirstTheme = localStorage.getItem("theme");
+      if (checkFirstTheme === null) {
+        localStorage.setItem("theme", "darkTheme");
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
       }
+    } catch (error) {
+      console.log("localStorage is not available");
     }
   },
 });

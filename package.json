@@ -29,8 +29,6 @@
     "vitest": "^0.26.2"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.6",
-    "daisyui": "^2.51.6",
-    "unocss-preset-daisy": "^4.0.0"
+    "@pinia/nuxt": "^0.4.6"
   }
 }
