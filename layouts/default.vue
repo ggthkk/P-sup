@@ -4,8 +4,8 @@
       :class="
         scrolled
           ? stores.theme === null
-            ? 'bg-white shadow-md'
-            : 'bg-[#102020] shadow-md'
+            ? 'bg-white shadow-md opacity-95'
+            : 'bg-[#102020] shadow-md opacity-95'
           : 'bg-transparent'
       "
       class="sticky inset-x-0 top-0 z-50 transition duration-500"

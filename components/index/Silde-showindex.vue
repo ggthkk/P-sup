@@ -1,6 +1,6 @@
 <template>
-  <div class="my-20">
-    <n-carousel show-arrow autoplay class="rounded-xl">
+  <div class="mt-20 mb-4">
+    <n-carousel show-arrow autoplay>
       <img class="carousel-img" src="/img/slide1.png" />
       <img class="carousel-img" src="/img/slide2.png" />
       <img class="carousel-img" src="/img/slide3.png" />

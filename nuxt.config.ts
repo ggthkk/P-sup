@@ -7,7 +7,10 @@ export default defineNuxtConfig({
       charset: "utf-16",
       viewport: "width=device-width, initial-scale=1",
       meta: [
-        { name: "description", content: "Starter template for Nuxt 3." },
+        {
+          name: "description",
+          content: "ชั้นวางของคุณภาพ ราคาถูก รับประกัน 3 ปี ที่นี้เท่านั้น",
+        },
         { name: "naive-ui-style" },
         { name: "naive-ui-style" },
       ],
