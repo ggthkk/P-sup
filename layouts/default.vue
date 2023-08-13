@@ -109,20 +109,12 @@ export default defineComponent({
       {
         label: "Home",
         key: "Home",
+        onClick: () => scrollToSection("home"),
       },
       {
         label: "Products",
-        children: [
-          {
-            label: "DRIVE-IN RACK SYSTEM",
-            key: "Productssub_1",
-          },
-          {
-            label: "Beverage",
-            key: "Productssub_2",
-          },
-        ],
         key: "2",
+        onClick: () => scrollToSection("products"),
       },
       {
         label: "Gallery",
@@ -141,6 +133,14 @@ export default defineComponent({
         key: "Contact",
       },
     ];
+
+    function scrollToSection(e) {
+      if (e === "home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else if (e === "products") {
+        window.scrollTo({ top: 2250, behavior: "smooth" });
+      }
+    }
     const scrolled = ref(false);
 
     onMounted(() => {

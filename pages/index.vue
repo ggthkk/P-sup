@@ -23,7 +23,10 @@
             พร้อมรับประกันสินค้ามากกว่าใครถึง 3 ปี
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <n-button type="primary"> Get started </n-button>
+            <n-button type="primary" @click="scrollToSection('products')"
+              >Products</n-button
+            >
+
             <n-button quaternary type="info"> Learn more </n-button>
           </div>
         </div>
@@ -31,6 +34,7 @@
     </div>
     <Slidepage />
     <Whatus />
+    <Products />
   </div>
 </template>
 <script lang="ts">
@@ -38,11 +42,13 @@ import { defineComponent } from "vue";
 import { useStore } from "~/stores/theme";
 import Slidepage from "~/components/index/Silde-showindex.vue";
 import Whatus from "~~/components/index/Whatus.vue";
+import Products from "~/components/index/Products.vue";
 
 export default defineComponent({
   components: {
     Slidepage,
     Whatus,
+    Products,
   },
   setup() {
     const stores = useStore();
@@ -53,6 +59,13 @@ export default defineComponent({
   methods: {
     changeTheme() {
       this.stores.changeTheme((this.stores.active = !this.stores.active));
+    },
+    scrollToSection(e: string) {
+      if (e === "home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else if (e === "products") {
+        window.scrollTo({ top: 2250, behavior: "smooth" });
+      }
     },
   },
 });

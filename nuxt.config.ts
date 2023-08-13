@@ -30,9 +30,25 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@unocss/nuxt", "@pinia/nuxt", "@bg-dev/nuxt-naiveui"],
+  modules: [
+    "@unocss/nuxt",
+    "@pinia/nuxt",
+    "@bg-dev/nuxt-naiveui",
+    "nuxt-purgecss",
+  ],
   //  css: ["@unocss/reset/tailwind.css"],
   unocss: {
     presets: [presetUno()],
+  },
+  plugins: [{ src: "@/plugins/aos", ssr: false, mode: "client" }],
+  purgecss: {
+    whitelist: [
+      "aos-init",
+      "aos-animate",
+      "data-aos-delay",
+      "data-aos-duration",
+      "fade-up",
+      "zoom-in",
+    ],
   },
 });
