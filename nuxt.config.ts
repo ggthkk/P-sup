@@ -44,7 +44,7 @@ export default defineNuxtConfig({
 
     shortcuts: [],
     rules: [],
-    // presets: [presetUno()],
+    presets: [presetUno()],
   },
   experimental: {
     reactivityTransform: true,
@@ -79,6 +79,7 @@ export default defineNuxtConfig({
   ssr: false,
   plugins: [{ src: "@/plugins/aos", ssr: false, mode: "client" }],
   purgecss: {
+    enabled: true,
     whitelist: [
       "aos-init",
       "aos-animate",
