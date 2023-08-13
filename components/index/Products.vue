@@ -4,14 +4,46 @@
       <div
         class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3"
       >
-        <ProductDriveInRackSystem />
-        <productMEDIUMRACK />
-        <productMEZZANINEFLOOR />
-        <productMICRORACK />
-        <productMICRORACKFLOOR />
-        <productMOBILECABINET />
-        <productSELECTIVERACKSYSTEM />
-        <productMADETOORDER />
+        <ProductDriveInRackSystem
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
+        <productMEDIUMRACK
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
+        <productMEZZANINEFLOOR
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
+        <productMICRORACK
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
+        <productMICRORACKFLOOR
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
+        <productMOBILECABINET
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
+        <productSELECTIVERACKSYSTEM
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
+        <productMADETOORDER
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
       </div>
     </div>
   </div>

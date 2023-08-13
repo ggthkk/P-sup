@@ -21,6 +21,8 @@
                 v-for="stat in stats"
                 :key="stat.id"
                 class="flex flex-col bg-gray-400/5 p-8 gap-4"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
               >
                 <dt class="text-sm font-semibold leading-6">
                   {{ stat.description }}

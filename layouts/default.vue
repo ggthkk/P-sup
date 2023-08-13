@@ -117,12 +117,9 @@ export default defineComponent({
         onClick: () => scrollToSection("products"),
       },
       {
-        label: "Gallery",
-        key: "Products",
-      },
-      {
         label: "Infomation",
         key: "Infomation",
+        onClick: () => scrollToSection("Infomation"),
       },
       {
         label: "Process",
@@ -139,6 +136,8 @@ export default defineComponent({
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else if (e === "products") {
         window.scrollTo({ top: 2250, behavior: "smooth" });
+      } else if (e === "Infomation") {
+        window.scrollTo({ top: 1450, behavior: "smooth" });
       }
     }
     const scrolled = ref(false);
