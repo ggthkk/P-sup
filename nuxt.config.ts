@@ -40,5 +40,6 @@ export default defineNuxtConfig({
   unocss: {
     presets: [presetUno()],
   },
+  ssr: false,
   plugins: [{ src: "@/plugins/aos", ssr: false, mode: "client" }],
 });
