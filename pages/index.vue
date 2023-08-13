@@ -39,10 +39,10 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import { useStore } from "~/stores/theme";
-import Slidepage from "~/components/index/Silde-showindex.vue";
-import Whatus from "~~/components/index/Whatus.vue";
-import Products from "~/components/index/Products.vue";
+import { useStore } from "@/stores/theme";
+import Slidepage from "@/components/index/Silde-showindex.vue";
+import Whatus from "@/components/index/Whatus.vue";
+import Products from "@/components/index/Products.vue";
 
 export default defineComponent({
   components: {

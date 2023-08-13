@@ -44,7 +44,7 @@ export default defineNuxtConfig({
 
     shortcuts: [],
     rules: [],
-    presets: [presetUno()],
+    // presets: [presetUno()],
   },
   experimental: {
     reactivityTransform: true,
