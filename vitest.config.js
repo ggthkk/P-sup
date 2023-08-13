@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     vue(),
     unocss({
-      presets: [presetUno(), presetDaisy()],
+      presets: [],
     }),
   ],
 });
