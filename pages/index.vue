@@ -37,7 +37,7 @@
     <Products />
   </div>
 </template>
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 import { useStore } from "@/stores/theme";
 import Slidepage from "@/components/index/Silde-showindex.vue";
@@ -60,7 +60,7 @@ export default defineComponent({
     changeTheme() {
       this.stores.changeTheme((this.stores.active = !this.stores.active));
     },
-    scrollToSection(e: string) {
+    scrollToSection(e) {
       if (e === "home") {
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else if (e === "products") {

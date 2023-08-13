@@ -10,7 +10,7 @@
     </n-config-provider>
   </div>
 </template>
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 import { useStore } from "~/stores/theme";
 export default defineComponent({

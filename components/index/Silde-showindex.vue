@@ -39,12 +39,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({});
-</script>
-
 <style scoped>
 .carousel-img {
   width: 100%;
