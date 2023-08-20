@@ -124,10 +124,12 @@ export default defineComponent({
       {
         label: "Process",
         key: "Process",
+        onClick: () => scrollToSection("Process"),
       },
       {
         label: "Contact us",
         key: "Contact",
+        onClick: () => scrollToSection("Contact"),
       },
     ];
 
@@ -138,6 +140,10 @@ export default defineComponent({
         window.scrollTo({ top: 2250, behavior: "smooth" });
       } else if (e === "Infomation") {
         window.scrollTo({ top: 1450, behavior: "smooth" });
+      } else if (e === "Process") {
+        window.scrollTo({ top: 3200, behavior: "smooth" });
+      } else if (e === "Contact") {
+        window.scrollTo({ top: 4200, behavior: "smooth" });
       }
     }
     const scrolled = ref(false);
@@ -164,3 +170,34 @@ export default defineComponent({
   },
 });
 </script>
+<style>
+@media only screen and (max-width: 768px) {
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+  [data-aos^="fade"][data-aos^="fade"],
+  [data-aos^="zoom"][data-aos^="zoom"] {
+    opacity: 1 !important;
+  }
+  [data-aos="zoom-in"] {
+    transform: scale(1) !important;
+  }
+}
+</style>

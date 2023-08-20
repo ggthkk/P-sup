@@ -35,6 +35,8 @@
     <Slidepage />
     <Whatus />
     <Products />
+    <Process />
+    <Contactus />
   </div>
 </template>
 <script>
@@ -43,12 +45,16 @@ import { useStore } from "@/stores/theme";
 import Slidepage from "@/components/index/Silde-showindex.vue";
 import Whatus from "@/components/index/Whatus.vue";
 import Products from "@/components/index/Products.vue";
+import Process from "@/components/index/Process.vue";
+import Contactus from "@/components/index/Contactus.vue";
 
 export default defineComponent({
   components: {
     Slidepage,
     Whatus,
     Products,
+    Process,
+    Contactus,
   },
   setup() {
     const stores = useStore();
