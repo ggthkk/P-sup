@@ -27,7 +27,13 @@
               >Products</n-button
             >
 
-            <n-button quaternary type="info"> Learn more </n-button>
+            <n-button
+              quaternary
+              type="info"
+              @click="scrollToSection('Process')"
+            >
+              Learn more
+            </n-button>
           </div>
         </div>
       </div>
@@ -71,6 +77,12 @@ export default defineComponent({
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else if (e === "products") {
         window.scrollTo({ top: 2250, behavior: "smooth" });
+      } else if (e === "Infomation") {
+        window.scrollTo({ top: 1450, behavior: "smooth" });
+      } else if (e === "Process") {
+        window.scrollTo({ top: 3200, behavior: "smooth" });
+      } else if (e === "Contact") {
+        window.scrollTo({ top: 4200, behavior: "smooth" });
       }
     },
   },
