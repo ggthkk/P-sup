@@ -27,7 +27,13 @@
               >Products</n-button
             >
 
-            <n-button quaternary type="info"> Learn more </n-button>
+            <n-button
+              quaternary
+              type="info"
+              @click="scrollToSection('Process')"
+            >
+              Learn more
+            </n-button>
           </div>
         </div>
       </div>
@@ -35,20 +41,26 @@
     <Slidepage />
     <Whatus />
     <Products />
+    <Process />
+    <Contactus />
   </div>
 </template>
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 import { useStore } from "@/stores/theme";
 import Slidepage from "@/components/index/Silde-showindex.vue";
 import Whatus from "@/components/index/Whatus.vue";
 import Products from "@/components/index/Products.vue";
+import Process from "@/components/index/Process.vue";
+import Contactus from "@/components/index/Contactus.vue";
 
 export default defineComponent({
   components: {
     Slidepage,
     Whatus,
     Products,
+    Process,
+    Contactus,
   },
   setup() {
     const stores = useStore();
@@ -60,11 +72,17 @@ export default defineComponent({
     changeTheme() {
       this.stores.changeTheme((this.stores.active = !this.stores.active));
     },
-    scrollToSection(e: string) {
+    scrollToSection(e) {
       if (e === "home") {
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else if (e === "products") {
         window.scrollTo({ top: 2250, behavior: "smooth" });
+      } else if (e === "Infomation") {
+        window.scrollTo({ top: 1450, behavior: "smooth" });
+      } else if (e === "Process") {
+        window.scrollTo({ top: 3200, behavior: "smooth" });
+      } else if (e === "Contact") {
+        window.scrollTo({ top: 4200, behavior: "smooth" });
       }
     },
   },

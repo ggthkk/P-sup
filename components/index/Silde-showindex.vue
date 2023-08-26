@@ -1,5 +1,10 @@
 <template>
-  <div class="mt-20 mb-4" data-aos="fade-down">
+  <div
+    class="mt-20 mb-4"
+    data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom"
+    data-aos-duration="2500"
+  >
     <n-carousel show-arrow autoplay>
       <img class="carousel-img" src="/img/slide1.png" />
       <img class="carousel-img" src="/img/slide2.png" />
@@ -38,12 +43,6 @@
     </n-carousel>
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({});
-</script>
 
 <style scoped>
 .carousel-img {
