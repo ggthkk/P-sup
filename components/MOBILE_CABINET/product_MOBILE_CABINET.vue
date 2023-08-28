@@ -1,7 +1,7 @@
 <template>
   <div
-    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer"
-    :class="stores.theme === null ? 'bg-gray-100' : 'bg-[#242526]'"
+    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer overflow-hidden"
+    :class="stores.theme === null ? 'bg-white' : 'bg-[#242526]'"
     @click="showModal = true"
   >
     <n-carousel
@@ -15,7 +15,7 @@
         v-for="product in products"
         :key="product.id"
         :src="product.imageSrc"
-        class="carousel-img rounded-xl transition duration-500 ease-in-out transform hover:scale-105"
+        class="carousel-img rounded-t-xl transition duration-500 ease-in-out transform hover:scale-105"
       />
     </n-carousel>
 

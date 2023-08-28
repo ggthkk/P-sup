@@ -1,7 +1,7 @@
 <template>
   <div
-    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer"
-    :class="stores.theme === null ? 'bg-gray-100' : 'bg-[#242526]'"
+    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer overflow-hidden"
+    :class="stores.theme === null ? 'bg-white' : 'bg-[#242526]'"
     @click="showModal = true"
   >
     <n-carousel
@@ -15,7 +15,7 @@
         v-for="product in products"
         :key="product.id"
         :src="product.imageSrc"
-        class="carousel-img rounded-xl transition duration-500 ease-in-out transform hover:scale-105"
+        class="carousel-img rounded-t-xl transition duration-500 ease-in-out transform hover:scale-105"
       />
     </n-carousel>
 
@@ -113,7 +113,7 @@ function addLineBreaks(text) {
 }
 const modalcontent = ref({
   title:
-    "SELECTIVE RACK SYSTEM หรือที่เรารู้จักในภาษาทั่วไปคือ ชั้นวางสินค้าในคลังสินค้า/โกดัง โดย Selective rack เป็นชั้นวางที่เหมาะกับคลังสินค้าหรือร้านซุปเปอร์มาเก็ตที่ต้องการเก็บสินค้าและวัตถุดิบจำนวนมาก ที่มีความหลากหลายของสินค้า ตามประโยชน์ใช้สอยดังต่อไปนี้",
+    "SELECTIVE RACK SYSTEM หรือที่เรารู้จักในภาษาทั่วไปคือ ชั้นวางสินค้าในคลังสินค้า/โกดัง โดย Selective Rack เป็นชั้นวางที่เหมาะกับคลังสินค้าหรือร้านซุปเปอร์มาเก็ตที่ต้องการเก็บสินค้าและวัตถุดิบจำนวนมาก ที่มีความหลากหลายของสินค้า ตามประโยชน์ใช้สอยดังต่อไปนี้",
   content: `- รถลากสินค้าสามารถเข้าถึงตัวชั้นสินค้าได้ในระดับสูงสุด
 - ด้วยความทันสมัยของพาเลทจะสามารถบรรทุกเคลื่อนย้ายได้จากที่หนึ่งไปอีกที่หนึ่งได้
 - ง่ายต่อการจัดการสต็อกสินค้าเพราะพาเลทอยู่ในตำแหน่งที่เป็นระเบียบ

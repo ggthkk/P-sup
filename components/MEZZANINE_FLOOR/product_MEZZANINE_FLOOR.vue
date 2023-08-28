@@ -1,7 +1,7 @@
 <template>
   <div
-    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer"
-    :class="stores.theme === null ? 'bg-gray-100' : 'bg-[#242526]'"
+    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer overflow-hidden"
+    :class="stores.theme === null ? 'bg-white' : 'bg-[#242526]'"
     @click="showModal = true"
   >
     <n-carousel
@@ -15,7 +15,7 @@
         v-for="product in products"
         :key="product.id"
         :src="product.imageSrc"
-        class="carousel-img rounded-xl transition duration-500 ease-in-out transform hover:scale-105"
+        class="carousel-img rounded-t-xl transition duration-500 ease-in-out transform hover:scale-105"
       />
     </n-carousel>
 
@@ -113,7 +113,7 @@ function addLineBreaks(text) {
 }
 const modalcontent = ref({
   title:
-    "Mezzanine Floor คือชั้นหริอชั้นลอยที่สร้างขึ้นเพื่อการจัดสรรพื้นที่จำกัด การจัดเก็บสิ่งของเพื่อให้มีประสทิธิภาพ และเกิดประสิทธิผลในทางการจัดการงานในคลังสินค้าหรือคลังวัสดุ",
+    "Mezzanine Floor คือชั้นหรือชั้นลอยที่สร้างขึ้นเพื่อการจัดสรรพื้นที่จำกัด การจัดเก็บสิ่งของเพื่อให้มีประสิทธิภาพ และเกิดประสิทธิผลในทางการจัดการงานในคลังสินค้าหรือคลังวัสดุ",
   content: `การติดตั้งชั้นลอยช่วยให้ใช้พื้นที่ได้อย่างเต็มที่ โดยสามารถใช้พื้นที่ในการจัดเก็บเป็นพื้นที่ทำงานและสำนักงานได้มากถึงสองเท่าหรือสามเท่าความสูงของอาคารช่วยให้ใช้พื้นที่ได้อย่างมีประสิทธิภาพและทำกำไรได้เนื่องจากใช้เงินลงทุนน้อยกว่าต้นทุนค่าที่ดินสามารถใช้พื้นที่ทั้งหมดหรือใช้เฉพาะแนวตั้งในการติดตั้งชั้นลอยก็ได้ Mezzanine Floor เป็นชั้นเก็บสินค้าที่ช่วยเพิ่มพื้นที่ในการใช้งานให้มากขึ้น โดยการทำเป็นชั้นลอย สามารถออกแบบให้รับน้ำหนักได้ตามความต้องการ การรับน้ำหนักเริ่มตั้งแต่ 300-1000 Kgs/Sqm
 
 ในการจัดแบ่งพื้นที่หรือเปิดพื้นที่ให้กว้างขึ้นเพิ่มประโยชน์ในการใช้สอยพื้นที่ให้ได้มากขึ้นเกือบเท่าตัว และหากคุณต้องการคำแนะนำงานโครงสร้างดังกล่าว มีความคงทนแข็งแรง สามารถรับน้ำหนัก 500 - 1000 กก./ตรม. พร้อมกับมีทีมงานให้คำปรึกษา และออกแบบได้ที่เราฟรี`,

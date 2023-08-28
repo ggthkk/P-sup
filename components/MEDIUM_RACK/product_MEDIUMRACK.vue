@@ -1,7 +1,7 @@
 <template>
   <div
-    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer"
-    :class="stores.theme === null ? 'bg-gray-100' : 'bg-[#242526]'"
+    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer overflow-hidden"
+    :class="stores.theme === null ? 'bg-white' : 'bg-[#242526]'"
     @click="showModal = true"
   >
     <n-carousel
@@ -15,7 +15,7 @@
         v-for="product in products"
         :key="product.id"
         :src="product.imageSrc"
-        class="carousel-img rounded-xl transition duration-500 ease-in-out transform hover:scale-105"
+        class="carousel-img rounded-t-xl transition duration-500 ease-in-out transform hover:scale-105"
       />
     </n-carousel>
 
@@ -113,7 +113,7 @@ function addLineBreaks(text) {
 }
 const modalcontent = ref({
   title:
-    "Medium rack เป็นหนึ่งใน Selective rack แต่ถูกออกแบบให้ใช้งานได้สินค้าหลากหลายแบบมาตรฐาน",
+    "Medium Rack เป็นหนึ่งใน Selective Rack แต่ถูกออกแบบให้ใช้งานได้สินค้าหลากหลายแบบมาตรฐาน",
   content: `ประกอบด้วยโครงเหล็กฐาน 1 คู่, คานรับน้ำหนัก, สเตย์ยึดด้านหลัง และแผ่นชั้นซึ่งอาจใช้ได้ทั้งไม้อัดหรือแผ่นเหล็ก แต่ละชั้นสามารถรับน้ำหนักได้ตั้งแต่ 400 – 1,000 กก. และยังสามารถปรับระดับชั้นได้โดยไม่ต้องใช้เครื่องมือ การติดตั้งก็ง่าย โดยมีรายละเอียดดังต่อไปนี้
                 
   - ขนาดมาตราฐาน กว้าง (W) 1200-2000 x ความลึก (D) 600-800 x ความสูง (H) 1500-4000 mm.

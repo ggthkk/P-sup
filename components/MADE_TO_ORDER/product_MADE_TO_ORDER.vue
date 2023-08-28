@@ -1,7 +1,7 @@
 <template>
   <div
-    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer"
-    :class="stores.theme === null ? 'bg-gray-100' : 'bg-[#242526]'"
+    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer overflow-hidden"
+    :class="stores.theme === null ? 'bg-white' : 'bg-[#242526]'"
     @click="showModal = true"
   >
     <n-carousel
@@ -15,7 +15,7 @@
         v-for="product in products"
         :key="product.id"
         :src="product.imageSrc"
-        class="carousel-img rounded-xl transition duration-500 ease-in-out transform hover:scale-105"
+        class="carousel-img rounded-t-xl transition duration-500 ease-in-out transform hover:scale-105"
       />
     </n-carousel>
 
@@ -146,11 +146,11 @@ function addLineBreaks(text) {
 }
 const modalcontent = ref({
   title: "MADE TO ORDER",
-  content: `นอกจากงานชั้นวางของสำเร็จรูปแล้ว เรายังสามารถออกแบบชั้นางของ หรืออุปกรณ์อื่นๆนอกเนื่องจากสินค้าที่เรามีอยู่หน้าเว็บ เพื่อการใช้งานที่เหมาะสมกับคุณได้อีกด้วย
+  content: `นอกจากงานชั้นวางของสำเร็จรูปแล้ว เรายังสามารถออกแบบชั้นวางของ หรืออุปกรณ์อื่นๆ นอกเหนือจากสินค้าที่เรามีอยู่หน้าเว็บ เพื่อการใช้งานที่เหมาะสมกับคุณได้อีกด้วย
 
 ไม่ว่าจะเป็น PALLET CONTAINER, ROLL PALLET, STACKING PALLET, งานกลึง ซ่อมอะไหล่เครื่องจักรทุกชนิด, รถเข็นเหล็ก และ สแตนเลส, งานเหล็ก และ สแตนเลส เป็นต้น ซึ่งทั้งหมดนี้ ต่างก็มีการรับประกันสินค้า เพื่อให้คุณมั่นใจในคุณภาพของเรา
 
-โดยคุณเองสามารถติดต่อ เพื่อสอบถามข้อมูล หรือรวมไปถึงการให้คำปรึกษา และออกแบบฟรี โดยไม่มีค่าใช้จ่ายใดๆทั้งสิ้น และเหนื่อกว่าผู้ให็บริการที่อื่น คือ สินค้าของเรากล้ารับประกัน ด้วยระยะเวลาที่นานกว่าใคร คือสิ่งที่เรามั่นใจในคุณภาพของเรา`,
+โดยคุณเองสามารถติดต่อ เพื่อสอบถามข้อมูล หรือรวมไปถึงการให้คำปรึกษา และออกแบบฟรี โดยไม่มีค่าใช้จ่ายใดๆทั้งสิ้น และเหนือกว่าผู้ให้บริการที่อื่น คือ สินค้าของเรากล้ารับประกัน ด้วยระยะเวลาที่นานกว่าใคร คือสิ่งที่เรามั่นใจในคุณภาพของเรา`,
 });
 </script>
 <style scoped>
