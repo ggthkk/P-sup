@@ -117,9 +117,9 @@ export default defineComponent({
         onClick: () => scrollToSection("products"),
       },
       {
-        label: "Infomation",
-        key: "Infomation",
-        onClick: () => scrollToSection("Infomation"),
+        label: "Information",
+        key: "Information",
+        onClick: () => scrollToSection("Information"),
       },
       {
         label: "Process",

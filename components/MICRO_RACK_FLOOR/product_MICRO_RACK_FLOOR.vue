@@ -1,7 +1,7 @@
 <template>
   <div
-    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer"
-    :class="stores.theme === null ? 'bg-gray-100' : 'bg-[#242526]'"
+    class="rounded-lg transition duration-500 ease-in-out transform drop-shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer overflow-hidden"
+    :class="stores.theme === null ? 'bg-white' : 'bg-[#242526]'"
     @click="showModal = true"
   >
     <n-carousel
@@ -15,7 +15,7 @@
         v-for="product in products"
         :key="product.id"
         :src="product.imageSrc"
-        class="carousel-img rounded-xl transition duration-500 ease-in-out transform hover:scale-105"
+        class="carousel-img rounded-t-xl transition duration-500 ease-in-out transform hover:scale-105"
       />
     </n-carousel>
 
@@ -113,7 +113,7 @@ function addLineBreaks(text) {
 }
 const modalcontent = ref({
   title:
-    "MICRO RACK FLOOR หรือ ชั้นเก็บสินค้าที่ยกพื้นสูงขึ้นโดยสร้างเป็นโครงเหล็กเพื่อเพิ่มพื้นที่ ในการใช้งานให้มากขึ้น สามารถเพิ่มปริมาณการจัดเก็บได้มากขึ้น และเรียบร้อย และทำให้การขนถ่ายสินค้าง่ายและสะดวกมากยิ่งขึ้น",
+    "MICRO RACK FLOOR หรือ ชั้นเก็บสินค้าที่ยกพื้นสูงขึ้นโดยสร้างเป็นโครงเหล็กเพื่อเพิ่มพื้นที่ ในการใช้งานให้มากขึ้น สามารถเพิ่มปริมาณการจัดเก็บได้มากขึ้น และเรียบร้อย ทำให้การขนถ่ายสินค้าง่ายและสะดวกมากยิ่งขึ้น",
   content: `ซึ่งบางครั้งเราอาจจะเรียกว่า Micro Rack With Mezzanine Floor สามารถขยายต่อเติมในแนวตั้งเป็น 2-3 ชั้น ซึ่งจะมีอุปกรณ์อื่นเข้ามาช่วยเสริมสร้าง อาทิเช่น แผ่นปูทางเดินชั้น2 บันไดและราวกันตก 
   
   เพื่อเพิ่มพื้นที่ใช้สอยในการจัดเก็บให้มากขึ้นกว่าเดิม 2-3 เท่าในแนวสูง สะดวกในการใช้งานเป็นอย่างมาก สามารถจัดหมวดหมู่ได้อย่างเป็นระเบียบ ตรวจนับของง่าย หยิบใช้สอยสะดวกมีสีสันสวยงาม อายุการใช้งานนาน 5-10 ปี
