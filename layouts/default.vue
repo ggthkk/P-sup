@@ -133,12 +133,12 @@ export default defineComponent({
       },
     ];
 
-    function scrollToSection(e) {
+    function scrollToSection(e: string) {
       if (e === "home") {
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else if (e === "products") {
         window.scrollTo({ top: 2250, behavior: "smooth" });
-      } else if (e === "Infomation") {
+      } else if (e === "Information") {
         window.scrollTo({ top: 1450, behavior: "smooth" });
       } else if (e === "Process") {
         window.scrollTo({ top: 3200, behavior: "smooth" });
